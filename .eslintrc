@@ -1,0 +1,15 @@
+{
+  "extends": [
+    "unobtrusive",
+    "unobtrusive/import"
+  ],
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "globals": {
+    "module": false,
+    "exports": false,
+    "require": false
+  }
+}
