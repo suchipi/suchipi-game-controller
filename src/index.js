@@ -16,7 +16,7 @@ const BUTTON_NAMES = {
     "down",
     "left",
     "right",
-    "home",
+    "ps",
   ],
   XBOX: [
     "a",
