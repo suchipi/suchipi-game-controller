@@ -58,7 +58,7 @@ const BUTTON_NAMES = {
   ],
 };
 
-class Gamepad {
+class GameController {
   constructor({
     id = 0,
     buttonNames = BUTTON_NAMES.PLAYSTATION,
@@ -116,7 +116,7 @@ class Gamepad {
     if (this._rafId != null) return;
 
     const cb = () => {
-      this.onFrame();
+      this._onFrame();
       this._rafId = requestAnimationFrame(cb);
     };
     this._rafId = requestAnimationFrame(cb);
@@ -157,7 +157,7 @@ class Gamepad {
     set.delete(callback);
   }
 
-  onFrame() {
+  _onFrame() {
     const gamepad = navigator.getGamepads()[this._id];
 
     if (gamepad == null) {
@@ -252,6 +252,6 @@ class Gamepad {
   }
 }
 
-Gamepad.BUTTON_NAMES = BUTTON_NAMES;
+GameController.BUTTON_NAMES = BUTTON_NAMES;
 
-module.exports = Gamepad;
+module.exports = GameController;
