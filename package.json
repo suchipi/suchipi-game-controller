@@ -1,7 +1,8 @@
 {
   "name": "@suchipi/game-controller",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/index.js",
+  "repository": "suchipi/suchipi-game-controller",
   "license": "MIT",
   "devDependencies": {
     "@babel/cli": "^7.13.10",

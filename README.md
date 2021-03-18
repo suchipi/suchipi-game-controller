@@ -75,7 +75,7 @@ const controller = new GameController({
 
 ## API Documentation
 
-Please see the included [TypeScript types](src/index.d.ts) for API documentation.
+Please see the included [TypeScript types](https://github.com/suchipi/suchipi-game-controller/blob/main/src/index.d.ts) for API documentation.
 
 ## License
 
