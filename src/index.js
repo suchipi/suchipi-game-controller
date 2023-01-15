@@ -191,12 +191,12 @@ class GameController {
     }
 
     state.rightStick.x = gamepad.axes[2];
-    if (Math.abs(state.rightStick.x) < this._deadzoneLeft) {
+    if (Math.abs(state.rightStick.x) < this._deadzoneRight) {
       state.rightStick.x = 0;
     }
 
     state.rightStick.y = gamepad.axes[3];
-    if (Math.abs(state.rightStick.y) < this._deadzoneLeft) {
+    if (Math.abs(state.rightStick.y) < this._deadzoneRight) {
       state.rightStick.y = 0;
     }
 
